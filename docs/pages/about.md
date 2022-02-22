@@ -3,23 +3,8 @@ title: About
 permalink: /about/
 ---
 
-This is a template and actions to help you to collaboratively work on things.
-With proposals-jekyll:
-
-1. New pull requests open on the repository are considered proposals.
-2. A new proposal will trigger a workflow to add the draft to the web interface
-3. Merging a pull request will add the draft as a final "approved" state, in which case it can be worked on further via PR.
-
-This means the following workflows:
-
- 1. on PR open, update file on gh-pages with draft state
- 2. on PR close, if file not already in main, remove from gh-pages
- 3. on PR merge, also update file on gh-pages with inprogress state
-
-It is based on the [tw-jekyll theme](https://vsoch.github.com/tw-jekyll/) for a Tailwind jekyll theme.
-See the [respository]({{ site.repo }}) for more details.
+This is a collaborative space under rse-ops to work on resources and good practices for open source software across the research software engineering and open source communities. This work is a part of rse-ops and falls under the scope of [RADIUSS](https://software.llnl.gov/radiuss/).
 
 ## Support
 
-If you need help, please don't hesitate to [open an issue](https://www.github.com/{{ site.github_user }}/{{ site.github_repo }}).
-
+If you need help, please don't hesitate to [open an issue](https://github.com/{{ site.github_user }}/{{ site.github_repo }}).

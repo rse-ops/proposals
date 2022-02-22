@@ -7,24 +7,3 @@
       url: "docs/proposals"
     - title: "About"
       url: "about"
-
-- title: Development
-  url: docs
-  links:
-    - title: "Development"
-      url: "docs/development"
-      children:
-        - title: Features
-          url: "docs/development#getting-started"
-        - title: Development
-          url: "docs/development#development"
-        - title: Customization
-          url: "docs/development#customization"
-
-- title: "Extras"
-  url: "docs/extras"
-  links:
-    - title: "News"
-      url: "news"
-    - title: Tags Page
-      url: "tags"

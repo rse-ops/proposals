@@ -15,18 +15,18 @@
 # in the templates via {{ site.myvariable }}.
 
 
-title: Proposals Jekyll
+title: Proposals
 description: > # this means to ignore newlines until "baseurl:"
-  Proposal framework for GitHub pages
+  Special Projects Proposals
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/proposal-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "/proposals" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://vsoch.github.io" # the base hostname & protocol for your site
+url: "https://rse-ops.github.io" # the base hostname & protocol for your site
 
 # Keywords (space separated)
-keywords: "documentation theme"
+keywords: "projects, rseng, research software engineering"
 
 # Add colorful permalinks to headers
 # change colors in _includes/permalinks.html
@@ -35,14 +35,14 @@ add_permalinks: true
 # Optional
 twitter: vsoch
 linkedin: vsochat
-support: https://github.com/vsoch/proposal-jekyll/issues
-repo: "https://github.com/vsoch/proposal-jekyll"
-github_user: vsoch
-github_repo: proposal-jekyll
+support: https://github.com/rse-ops/proposals/issues
+repo: "https://github.com/rse-ops/proposals"
+github_user: rse-ops
+github_repo: proposals
 # discord: https://community.discord.com
 
 # If you have a logo, put here to include in meta tags
-logo: assets/img/tw-jekyll.png
+logo: assets/img/rse-ops.png
 
 # branch to edit on GitHub
 github_branch: main
@@ -55,12 +55,15 @@ badge_rounded: true
 markdown: kramdown
 
 # Site colors! (commented out uses default)
-# main_color: "#344CB7"
+main_color: "#005dab"
+accent_color: "#741755"
 
 # Badge colors
 draft_color: "#3282B8"
-inprogress_color: "#FFAA4C"
-completed_color: "#344CB7"
+incubating_color: "#FFAA4C"
+graduated_color: "#344CB7"
+graduated_color: "#41b712"
+paused_color: "#e7c02c"
 
 # Permalink colors (commented out uses default)
 # fourth_fade: "#3282B8"

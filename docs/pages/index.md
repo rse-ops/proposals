@@ -1,17 +1,16 @@
 ---
 layout: page
-title: Proposals-Jekyll Theme
+title: Special Projects
 permalink: /
 ---
 
-## Welcome to Proposals Jekyll!
+## Welcome to Special Projects!
 
 <br>
 
-This is a started template with additional functionality added to [tw-jekyll](https://vsoch.github.com/tw-jekyll/) 
-to provide you or your organization an automated process to create and review proposals.
+This is a collaborative space to work on proposals.
 
 {% include proposals.html %}
 
-For getting started with working on proposals or development, see the {% include doc.html name="Getting Started" path="getting-started" %} page. Would you like to request a feature or contribute? [Open an issue]({{ site.repo }}/issues)
+For getting started with working on proposals or development, see the {% include doc.html name="Getting Started" path="getting-started" %} page. To open a pull request or issue, see the [site repository]({{ site.repo }}).
 
