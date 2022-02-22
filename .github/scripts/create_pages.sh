@@ -11,7 +11,4 @@ git checkout -b "${BRANCH_FROM}" || git checkout "${BRANCH_FROM}"
 git branch
 git config --global user.name "github-actions"
 git config --global user.email "github-actions@users.noreply.github.com"
-
-git add .
-git commit -m "Automated deployment of pages! $(date '+%Y-%m-%d')" || exit 0
 git push origin "${BRANCH_FROM}"
