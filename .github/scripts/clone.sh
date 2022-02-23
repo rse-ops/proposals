@@ -4,6 +4,7 @@ set -e
 
 BRANCH_FROM=${BRANCH_FROM:-gh-pages}
 printf "GitHub Actor: ${GITHUB_ACTOR}\n"
+git config pull.rebase false
 git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 git branch
 git fetch --unshallow origin || git fetch origin
