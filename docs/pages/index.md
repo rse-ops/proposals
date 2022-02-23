@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Special Projects
+title: rse-ops projects
 permalink: /
 ---
 
-## Welcome to Special Projects!
+## Welcome to rse-ops projects!
 
 <br>
 
