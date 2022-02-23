@@ -1,6 +1,6 @@
-## Proposals
+## rse-ops Proposals
 
-**⭐️ Welcome to Special Projects Proposals! ⭐️**
+**⭐️ Welcome to rse-ops Proposals! ⭐️**
 
 This is a collaborative space for working on proposals for rse-ops.
 
@@ -12,6 +12,7 @@ This is a collaborative space for working on proposals for rse-ops.
 
 And if you want to work on an incubating proposal further, just open a pull request! This repository is based on
 [proposal-jekyll](https://github.com/vsoch/proposal-jekyll) in case you want to make your own version.
+This work is a part of rse-ops and falls under the scope of [RADIUSS](https://software.llnl.gov/radiuss/)
 
 ### Usage
 
