@@ -170,7 +170,7 @@ class PullRequest:
         self.gh = Github(os.getenv("GITHUB_TOKEN"))
         events_path = os.getenv("GITHUB_EVENT_PATH")
         self.event = read_json(events_path)
-        self.repo = gh.get_repo(self.repo_name)
+        self.repo = self.gh.get_repo(self.repo_name)
         self.number = self.event["pull_request"]["number"]
 
     @property
