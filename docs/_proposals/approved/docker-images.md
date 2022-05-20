@@ -1,3 +1,11 @@
+---
+title: Docker Images
+layout: proposal
+tags: 
+ - graduated
+---
+
+
 _Container Bases_
 
 This project focused on developing [docker-images](https://github.com/rse-ops/docker-images),
@@ -18,7 +26,7 @@ building the base environment.
 
 The deliverables for this proposal included:
 
- 1. A set of core builds derived from Dockerfile and other metadata files in [rse-ops/docker-files](https://github.com/rse-ops/docker-images)
+ 1. A set of core builds derived from Dockerfile and other metadata files in [rse-ops/docker-images](https://github.com/rse-ops/docker-images)
  2. Automated workflows to run nightly to rebuild bases and matrix containers
  3. A self-updating web interface to find the latest containers and versions at [rse-ops.github.io/docker-images](https://rse-ops.github.io/docker-images)
  4. A custom pull request / merge workflow that only triggers builds for changes.
