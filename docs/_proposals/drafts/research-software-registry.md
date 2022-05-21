@@ -18,7 +18,7 @@ to a development environment. Our vision includes the following:
  - an ability to create citation and credit trees for software.
 
 This is really the "pie in the sky" because the registry isn't just for metadata, but is a way to make using the software totally seamless. 
-Select your software, get it insalled into a container, and go! But actually, if we design the registry intelligently, we can empower the deploying user to add whatever additional functionality they might want. E.g., a social media posting bot is a plugin you can install, a plugin that generates citations or graphs, or a builder/packager. It's up to the institution that deploys the registry. And I think if we did this right, we'd have social elements around it too - e.g., an annual "State of the Research Software Ecosystem" report and/or meetups to get people with similar software talking. And maybe if an institution is too small and can't deploy their own registry there could be a central one with a 'free tier."
+Select your software, get it installed into a container, and go! But actually, if we design the registry intelligently, we can empower the deploying user to add whatever additional functionality they might want. E.g., a social media posting bot is a plugin you can install, a plugin that generates citations or graphs, or a builder/packager. It's up to the institution that deploys the registry. And I think if we did this right, we'd have social elements around it too - e.g., an annual "State of the Research Software Ecosystem" report and/or meetups to get people with similar software talking. And maybe if an institution is too small and can't deploy their own registry there could be a central one with a 'free tier."
 
 
 ### Research Software Engineers
@@ -52,7 +52,7 @@ We would ideally want a flexible client that knows how to do some set of checks 
 on a container technology of choice, and an environment. E.g.,:
 
 1. Find me this set of software
-2. Find me an appropriate deployment vehicle (e.g. extract source code, Singularity / Docker /Podman container)
+2. Find me an appropriate deployment vehicle (e.g. extract source code, Singularity / Docker / Podman container)
 3. Do the deployment, and make it easy to reproduce.
 
 
@@ -64,14 +64,14 @@ I am a collaborator that wants to deploy some custom set of projects from a regi
 click through an interface, select some number of libraries to try, and then get a development environment with them ready to go. 
 If I'm an HPC admin, I'd like to be able to click click click and get modules to install on my system for my user.  
 The environment might have some set of checks to register the software (e.g., "This software is installed on the HPC system"
-or check it "We looked at the SBOM and aren't concerned about any of the dependencies). 
+or check it "We looked at the SBOM and aren't concerned about any of the dependencies"). 
 
 
 ## Strategies
 
 There are two general strategies we can take:
 
-1. Place the burden of build and deploy on the individual project, meaning they can add a workflow file and token (after logging in) to authenticatee their project. 
+1. Place the burden of build and deploy on the individual project, meaning they can add a workflow file and token (after logging in) to authenticate their project. 
 2. Provide custom builders and a registry so a webhook triggers a remote builder (akin to Singularity Hub). 
 
 The pros of 1. are that each project is resposible for the success of their builds. The con is that we don't control them. The benefit of 2. is that we control them, but then the con is that we are responsible for them. Also, with a custom registry we can implement mostly anything we think of (e.g., custom builders).
