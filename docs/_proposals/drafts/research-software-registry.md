@@ -87,5 +87,59 @@ This workflow looks like the follow.
 4. The workflow should be customized to build the software in an appropriate way (e.g., spack vs. python vs go) and save all outputs to a small filesystem "view" into a tarball (we can use oras for this).
 5. The post-build step will include metadata extraction (e.g., dependencies or similar with citelang) along with sbom and manifest generation.
   - the manifest for a package includes several layers, one for metadata, one for software bill of materials, and the others the actual software.
+  - we also save stars and contributor metadata with each build, so we know what the community looks like at the time of the build.
 6. The packages will be pushed, and the references sent to the registry service.
 7. Once the reference is added to the registry, the database is updated (to update metadata / references) and the software is available for install to a custom container.
+
+
+### Deliverables
+
+Or specific tools that are needed here.
+
+1. A GitHub app or server that provides a service to login, connect, and interact - the "Research Software Registry"
+2. A library that uses the registry API to build custom containers from packages based on manager.
+3. The same library to assemble oras artifacts for a new build (push)
+4. GitHub workflows and actions that use the library to build and deploy.
+
+
+I think having the services based around known OCI registries and build services (e.g., GitHub packages and CI) while
+it removes our control of building, is better because it will be easier for an organization to deploy their own
+registry and not also need to deploy a full OCI registry and builder service.
+
+### Goals Achieved
+
+#### Understanding who in the group uses the software
+
+When people request custom developer environments, each request we will keep track of what they ask for. This is a better
+metric than downloads because people will request the environment specifically for development. We can also keep track of when someone requests a citation. Hopefully those two numbers would be correlated (but they don't have to be). It would be interesting to see when they are not.
+
+#### Asking for help
+
+Each research software entry would link directly to the GitHub (or other version control) issues board to ask for help, and documentation.
+
+#### Understanding what software was used in a journal
+
+If we could have the ability to "freeze" an artifact and entry, there is no reason a journal couldn't link to it as a "sort of" DOI, however this isn't as hardened as actual DOI services and I generally wouldn't promise anything. I don't even think those services that do promise things really can - how can anyone know what the world will look like in 50 or 100 years? How can we be sure some company or DOI service will still be around? We can't, so we do our best. I also have the opinion that software is a living entity, and the most useful software
+will live on (survive) and the less useful software not being around forever isn't so bad. It's noise if
+nobody thinks it's useful and it takes up space.
+
+#### Code Standards
+
+Optionally, each registry can have some kind of review process before adding a repository. E.g., they might
+ask for documentation, more commenting, tests, etc. Ideally there is a standard and a clear way to follow it.
+
+#### Exporting a Citation
+
+If the repository has a CITATION.cff, we can use that. Otherwise we can use some set of GitHub metadata to
+allow for creation of a citation via the registry interface.
+
+#### Developer Environment Builder
+
+Although we will provide an interface to generate custom builds from the registry, arguably the
+underlying software that knows how to use a registry API to do this can be used in other contexts,
+e.g., for workflows or similar.
+
+### Futher Integrations
+
+ - Once they have the container and have made changes, we will want to be able to save changes on demand (syspack) and move elsewhere.
+  
