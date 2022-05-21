@@ -5,9 +5,9 @@
 This is a collaborative space for working on proposals for rse-ops. 
 
  - Drafts should go under [docs/_proposals/drafts](docs/_proposals/drafts)
- - Graduated should go under [docs/_proposals/graduated](docs/_proposals/graduated)
+ - Graduated should go under [docs/_proposals/approved](docs/_proposals/approved)
 
-This work is a part of rse-ops and falls under the scope of [RADIUSS](https://software.llnl.gov/radiuss/)
+This work is a part of rse-ops and falls under the scope of [RADIUSS](https://software.llnl.gov/radiuss/).
 
 ### Usage
 
